@@ -699,6 +699,14 @@ body.inner-page {
     transform: translateY(0);
   }
 }
+/* =======================
+   Responsive Design Tweaks
+   ======================= */
+
+/* General Reset for Mobile Overflow */
+body, html {
+  overflow-x: hidden;
+}
 
 /* Navbar */
 @media (max-width: 768px) {
@@ -706,6 +714,7 @@ body.inner-page {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
+    width: 100%;
   }
   .nav-links {
     flex-direction: column;
@@ -753,21 +762,28 @@ body.inner-page {
 /* Footer */
 @media (max-width: 768px) {
   .footer2 {
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   .footer2 div {
     margin: 0.5rem 0;
+    word-wrap: break-word;
   }
 }
 
 /* Explore Cards */
 @media (max-width: 768px) {
   .explore-cards {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -779,4 +795,3 @@ body.inner-page {
     animation: slideIn 3s ease-in-out infinite;
   }
 }
-
