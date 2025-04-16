@@ -699,3 +699,84 @@ body.inner-page {
     transform: translateY(0);
   }
 }
+
+/* Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .cta-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+/* Welcome Section */
+@media (max-width: 768px) {
+  .welcome h2 {
+    font-size: 1.8rem;
+  }
+  .welcome p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Notification Section */
+@media (max-width: 768px) {
+  .notification p {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  .footer2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  .footer2 div {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Explore Cards */
+@media (max-width: 768px) {
+  .explore-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Notification Text Robot Style */
+@media (max-width: 768px) {
+  .notification-robot {
+    font-size: 1rem;
+    transform: translateX(0);
+    animation: slideIn 3s ease-in-out infinite;
+  }
+}
+
